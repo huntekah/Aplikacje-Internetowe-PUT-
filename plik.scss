@@ -1,0 +1,76 @@
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 2048px;
+ 
+ 
+// breakpoints
+$Mobile: "only screen and (max-width: 599px)";
+$Tablet: "only screen and (min-width: 600px) and (max-width: 1023px)";
+$Desktop: "only screen and (min-width: 1024px)";
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    }
+    
+// niby include, ale ja chce mieæ wszystko w jednym pliku
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+ 
+    @include border-box;
+ }
+
+%clearfix {
+    *zoom: 1;
+    &:before, 
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+ .wrapper,
+ .row {
+     @extend %clearfix;
+ }
+ 
+ .wrapper{
+    width: 95%;
+    max-width: $grid-max-width;      
+ }
+ 
+ 
+/* Mobile */
+@media #{$Mobile} {
+ @for $i from 1 through $grid-columns{
+     .col-m-#{$i}{
+         width: 100% / $grid-columns * $i;
+     }
+ }
+ 
+}
+/* Tablet */
+@media  #{$Tablet} {
+ main { width: 91.6%; }
+}
+/* Desktop */
+@media #{$Desktop} {
+ main { width: 66.6%; }
+}
