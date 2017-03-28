@@ -24,7 +24,7 @@ $Desktop: "only screen and (min-width: 1024px)";
     box-sizing: border-box; 
     }
     
-// niby include, ale ja chce mieæ wszystko w jednym pliku
+// niby include, ale ja chce mieï¿½ wszystko w jednym pliku
 *,
 *:after,
 *:before {
@@ -51,26 +51,54 @@ $Desktop: "only screen and (min-width: 1024px)";
      @extend %clearfix;
  }
  
+ 
+/* Mobile */
+@media #{$Mobile} {
+ 
  .wrapper{
     width: 95%;
     max-width: $grid-max-width;      
  }
  
  
-/* Mobile */
-@media #{$Mobile} {
  @for $i from 1 through $grid-columns{
      .col-m-#{$i}{
          width: 100% / $grid-columns * $i;
+		 background-color: rgb(45,200,45);
      }
  }
  
 }
 /* Tablet */
 @media  #{$Tablet} {
- main { width: 91.6%; }
+ 
+ .wrapper{
+    width: 91.6%;
+    max-width: $grid-max-width;      
+ }
+ 
+  @for $i from 1 through $grid-columns{
+     .col-t-#{$i}{
+         width: 100% / $grid-columns * $i;
+		 background-color: rgb(200,45,45);
+     }
+ }
+ 
+ //main { width: 91.6%; }
 }
 /* Desktop */
 @media #{$Desktop} {
- main { width: 66.6%; }
+
+.wrapper{
+    width: 91.6%;
+    max-width: $grid-max-width;      
+ }
+ 
+  @for $i from 1 through $grid-columns{
+     .col-d-#{$i}{
+         width: 100% / $grid-columns * $i;
+		 background-color: rgb(45,45,200);
+     }
+ }
+// main { width: 66.6%; }
 }
