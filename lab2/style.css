@@ -1,0 +1,312 @@
+@import url(_reset.css);
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	font-size: 16px;
+	margin: 0 0 100px;
+  /* Mobile */
+  /* Tablet */
+  /* Desktop */;
+}
+
+body header {
+	display: block;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+
+body main {
+	display: inline-block;
+}
+
+body .menu {
+	margin-left: auto;
+	display: none;
+	height: 100%;
+	font-size: 110%;
+}
+
+body .menu ul {
+	overflow: hidden;
+	list-style: none;
+}
+
+body .menu li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+body .title {
+	font-size: 200%;
+	display: inline-block;
+	height: 100%;
+}
+
+body a {
+	text-decoration: underline;
+	color: black;
+}
+
+@media only screen and (max-width: 599px) {
+	body .wrapper {
+		width: 95%;
+		max-width: 2048px;
+	}
+
+	body .col-m-1 {
+		width: 8.33333%;
+	}
+
+	body .col-m-2 {
+		width: 16.66667%;
+	}
+
+	body .col-m-3 {
+		width: 25%;
+	}
+
+	body .col-m-4 {
+		width: 33.33333%;
+	}
+
+	body .col-m-5 {
+		width: 41.66667%;
+	}
+
+	body .col-m-6 {
+		width: 50%;
+	}
+
+	body .col-m-7 {
+		width: 58.33333%;
+	}
+
+	body .col-m-8 {
+		width: 66.66667%;
+	}
+
+	body .col-m-9 {
+		width: 75%;
+	}
+
+	body .col-m-10 {
+		width: 83.33333%;
+	}
+
+	body .col-m-11 {
+		width: 91.66667%;
+	}
+
+	body .col-m-12 {
+		width: 100%;
+	}
+
+	body .menu-m {
+		display: inline-block;
+	}
+
+	body .title {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+	body .wrapper {
+		width: 91.6%;
+		max-width: 2048px;
+	}
+
+	body .col-t-1 {
+		width: 8.33333%;
+	}
+
+	body .col-t-2 {
+		width: 16.66667%;
+	}
+
+	body .col-t-3 {
+		width: 25%;
+	}
+
+	body .col-t-4 {
+		width: 33.33333%;
+	}
+
+	body .col-t-5 {
+		width: 41.66667%;
+	}
+
+	body .col-t-6 {
+		width: 50%;
+	}
+
+	body .col-t-7 {
+		width: 58.33333%;
+	}
+
+	body .col-t-8 {
+		width: 66.66667%;
+	}
+
+	body .col-t-9 {
+		width: 75%;
+	}
+
+	body .col-t-10 {
+		width: 83.33333%;
+	}
+
+	body .col-t-11 {
+		width: 91.66667%;
+	}
+
+	body .col-t-12 {
+		width: 100%;
+	}
+
+	body .menu-t {
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body .wrapper {
+		width: 91.6%;
+		max-width: 2048px;
+	}
+
+	body .col-d-1 {
+		width: 8.33333%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-2 {
+		width: 16.66667%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-3 {
+		width: 25%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-4 {
+		width: 33.33333%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-5 {
+		width: 41.66667%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-6 {
+		width: 50%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-7 {
+		width: 58.33333%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-8 {
+		width: 66.66667%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-9 {
+		width: 75%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-10 {
+		width: 83.33333%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-11 {
+		width: 91.66667%;
+		background-color: #2d2dc8;
+	}
+
+	body .col-d-12 {
+		width: 100%;
+		background-color: #2d2dc8;
+	}
+
+	body .menu-d {
+		display: flex;
+	}
+}
+
+body .middle {
+	vertical-align: middle;
+}
+
+body .container {
+	display: inline-block;
+	float: left;
+}
+
+body .container .frame {
+	margin: 20px;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #E0E0E0;
+	text-align: justify;
+}
+
+body .container .frame .header {
+	margin-left: 100%;
+	float: right;
+	display: block;
+	border-style: solid;
+	border-width: 0 0 1px 1px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+body .container .frame .content {
+	display: block;
+	margin: 20px;
+}
+
+body .container .frame #orange {
+	background-color: #FFB74D;
+}
+
+body .container .frame #blue {
+	background-color: #64B5F6;
+}
+
+body .container .frame #green {
+	background-color: #AED581;
+}
+
+body footer {
+	background-color: #E0E0E0;
+	text-align: center;
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+}
+
+body footer > div {
+	margin: 30px;
+}
+
+body footer span {
+	display: block;
+	font-weight: bold;
+}
