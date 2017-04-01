@@ -9,3 +9,18 @@ span.err{
 font-weight: bold;
 padding-left: 5px;
 }
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.wrong{
+    border: dashed;
+    border-color: red;
+}
+.clear_wrong{
+    border: unset;
+    border-color: unset;
+}
