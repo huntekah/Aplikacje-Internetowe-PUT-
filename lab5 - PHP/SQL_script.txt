@@ -2,7 +2,7 @@ INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Lizak', '4.70',
 INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Mak', '9001', 'Super MacBook', 'MacBook.jpg');
 INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Dell XPS 13', '4990', 'Laptop for Business', 'XPS13.jpg');
 INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'House', '300000', 'Luixurious house for a nice family', 'house.jpg');
-INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Love', '0', 'There are thing that have no price', 'love.jpg');
+INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Love', '0', 'There are things that have no price', 'love.jpg');
 INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Hanger', '6,67', 'Its good for your jacket', 'hanger.jpg');
 INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Choker', '69', 'Something you\'d look sexy in', 'choker.jpg');
 INSERT INTO `product` (`name`, `price`, `desc`, `img`) VALUES ( 'Nothing', '9001', 'You will pay for nothing', 'nothing.jpg');
