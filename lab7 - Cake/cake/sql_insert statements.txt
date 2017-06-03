@@ -1,0 +1,1 @@
+INSERT INTO `product` (`title`,`author`,`genre`) VALUES ( 'tytul1', 'krzys', 'drama'), ( 'tytul2', 'dawid', 'action'), ( 'tytul3', 'jan', 'horror'), ( 'tytul4', 'eustachy', 'novel');
